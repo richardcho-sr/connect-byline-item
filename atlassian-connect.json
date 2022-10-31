@@ -1,46 +1,49 @@
-    {
-      "key": "confluence-helloworld-addon",
-      "name": "Hello World",
-      "description": "My very first add-on",
-      "vendor": {
-        "name": "Angry Nerds",
-        "url": "https://www.atlassian.com/angrynerds"
-      },
-      "baseUrl": "{{localBaseUrl}}",
-      "links": {
-        "self": "{{localBaseUrl}}/atlassian-connect.json",
-        "homepage": "{{localBaseUrl}}/atlassian-connect.json"
-      },
-      "authentication": {
-        "type": "jwt"
-      },
-      "lifecycle": {
-        "installed": "/installed"
-      },
-      "scopes": [
-        "READ"
-      ],
-      "modules": {
-        "dynamicContentMacros": [
-          {
-            "key": "helloworld-macro",
-            "name": {
-              "value": "Hello World Macro"
-            },
-            "url": "/macro",
-            "description": {
-              "value": "Says 'Hello World'."
-            },
-            "outputType": "block",
-            "bodyType": "none"
-          }
-        ]
+{
+  "key": "confluence-byline-addon",
+  "name": "Byline Item for Confluence",
+  "description": "Page Approvals Integration",
+  "vendor": {
+    "name": "Confluence Tutorials",
+    "url": "https://www.atlassian.com/"
+  },
+  "baseUrl": "{{localBaseUrl}}",
+  "links": {
+    "self": "{{localBaseUrl}}/atlassian-connect.json",
+    "homepage": "{{localBaseUrl}}/atlassian-connect.json"
+  },
+  "authentication": {
+    "type": "jwt"
+  },
+  "lifecycle": {
+    "installed": "/installed"
+  },
+  "scopes": [
+    "READ",
+    "WRITE"
+  ],
+  "modules": {
+    "contentBylineItems": [
+      {
+        "context": "addon",
+        "target": {
+          "type": "inlinedialog"
+        },
+        "tooltip": {
+          "value": "Approvals"
+        },
+        "icon": {
+          "url": "https://i.imgur.com/HhQI5DH.png"
+        },
+        "name": {
+          "value": "Page Approvals"
+        },
+        "key": "byline-item",
+        "url": "/approvals?contentId={content.id}",
+        "contentPropertyKey": "byline-ui"
       }
+    ]
+  },
+  "apiMigrations": {
+        "gdpr": true
     }
-
-
-
-
-
-
-
+}
