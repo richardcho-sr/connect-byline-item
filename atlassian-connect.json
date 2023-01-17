@@ -35,11 +35,11 @@
           "type": "inlinedialog"
         },
         "tooltip": {
-          "value": "Page Approval",
-          "i18n": "byline.default"
+          "value": "Page Approval"
         },
         "name": {
-          "value": "Page Approval"
+          "value": "Page Approval",
+          "i18n": "byline.default"
         },
         "key": "byline-item",
         "url": "/approvals?contentId={content.id}",
