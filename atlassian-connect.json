@@ -13,8 +13,8 @@
   },
   "translations": {
     "paths": {
-      "en-US": "https://dji84rix1yofm.cloudfront.net/i18n/en.json",
-      "en-UK": "https://dji84rix1yofm.cloudfront.net/i18n/en.json"
+      "en-US": "https://dji84rix1yofm.cloudfront.net/i18n/1.0/en.json",
+      "en-UK": "https://dji84rix1yofm.cloudfront.net/i18n/1.0/en.json"
     }
   },
   "authentication": {
