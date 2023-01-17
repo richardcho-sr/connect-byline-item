@@ -11,6 +11,12 @@
     "self": "{{localBaseUrl}}/atlassian-connect.json",
     "homepage": "{{localBaseUrl}}/atlassian-connect.json"
   },
+  "translations": {
+    "paths": {
+      "en-US": "https://dji84rix1yofm.cloudfront.net/i18n/en.json",
+      "en-UK": "https://dji84rix1yofm.cloudfront.net/i18n/en.json"
+    }
+  },
   "authentication": {
     "type": "jwt"
   },
@@ -29,13 +35,11 @@
           "type": "inlinedialog"
         },
         "tooltip": {
-          "value": "Approvals"
-        },
-        "icon": {
-          "url": "https://i.imgur.com/HhQI5DH.png"
+          "value": "Page Approval",
+          "i18n": "byline.default"
         },
         "name": {
-          "value": "Page Approvals"
+          "value": "Page Approval"
         },
         "key": "byline-item",
         "url": "/approvals?contentId={content.id}",

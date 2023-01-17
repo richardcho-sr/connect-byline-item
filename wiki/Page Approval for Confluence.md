@@ -1,1 +1,0 @@
-<p>Say hello to Page Approval!</p><p>The quickest, easiest way to simplify the collaborative review and approval of Confluence documents fom start to finish! You can easily set up your page approval statuses, approvers and acknowledgers with the help of pre-built templates.</p>
